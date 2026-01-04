@@ -1,0 +1,7 @@
+:root, :before, :after{
+  --font-size:16px;
+}
+
+
+
+.mobile-only{display:none !important; visibility:hidden; content-visibility:hidden;}
