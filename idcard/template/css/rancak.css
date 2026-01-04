@@ -12,6 +12,7 @@
   --size-7:89px;
   --max-zindex:2147483648;
   --font-size:14px;
+  --bg-1:#FFFFFF;
 }
 
 
@@ -36,11 +37,16 @@ display:flex; text-align:center; align-items:center; justify-content:center;}
 
 
 
+.rancak-foundation, .rancak-container{position:relative;}
+.rancak-container{z-index:1000; min-height:100vh; min-height:100svh; width:100%; max-width:640px;}
 
 
 
 
-@media screen and (min-width:0px) and (max-width:1023px){
+
+
+
+@media screen and (min-width:0px) and (max-width:639px){
   :root, :before, :after{
     
   }
