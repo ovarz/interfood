@@ -3,16 +3,16 @@
 
 
 :root, :before, :after{
-  --size-1:5px;
+  --size-1:4px;
   --size-2:8px;
-  --size-3:13px;
-  --size-4:21px;
-  --size-5:34px;
-  --size-6:55px;
-  --size-7:89px;
+  --size-3:12px;
+  --size-4:20px;
+  --size-5:32px;
+  --size-6:52px;
+  --size-7:84px;
   --max-zindex:2147483648;
   --font-size:14px;
-  --bg-1:#FFFFFF;
+  --bg-1:#FAFAFA;
 }
 
 
@@ -38,7 +38,42 @@ display:flex; text-align:center; align-items:center; justify-content:center;}
 
 
 .rancak-foundation, .rancak-container{position:relative;}
-.rancak-container{z-index:1000; min-height:100vh; min-height:100svh; width:100%; max-width:640px;}
+.rancak-container{z-index:1000; min-height:100vh; min-height:100svh; width:100%; max-width:640px; display:grid; grid-auto-rows:min-content; grid-template-rows:auto auto auto 1fr auto;}
+
+
+
+.header, .personal-data{position:relative; z-index:1000;}
+.header .site-container{display:flex; justify-content:space-between; align-items:center; padding:var(--size-3);}
+.header-box{padding:var(--size-4);}
+.header-box svg{width:auto; height:var(--size-4);}
+.header-logo svg{height:var(--size-5);}
+.header-right{display:flex;}
+
+
+
+.personal-data{--thumb-size:72px; padding:0 var(--size-5) var(--size-4);}
+.personal-data-container{display:grid; grid-template-columns:auto 1fr; align-items:center;}
+.pdt-frame{--aspect-ratio:1/1; width:var(--thumb-size); margin-right:var(--size-4);}
+.pdi-container{display:grid; grid-gap:var(--size-1);}
+.pdi-name, .pdi-name-chinese{font-size:16px; line-height:140%;}
+.pdi-name{font-family:"Bai Jamjuree", sans-serif; font-size:1.143rem; font-weight:bold; line-height:130%; text-transform:uppercase;}
+
+
+
+.tab{display:grid; grid-template-columns:repeat(2,1fr);}
+.tab-button{padding:var(--size-3) var(--size-4); border-bottom:3px solid;
+font-family:"Bai Jamjuree", sans-serif; font-size:1rem; font-weight:bold; line-height:130%; text-transform:uppercase;}
+
+
+
+.main-content{padding:var(--size-5);}
+
+
+
+.footer{display:grid;}
+.footer-curve{line-height:0;}
+.footer-curve svg{width:100%; height:auto; position:relative; bottom:-1px;}
+.footer-copyright{padding:var(--size-4) var(--size-5); text-align:right; font-weight:bold;}
 
 
 
