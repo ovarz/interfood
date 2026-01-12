@@ -136,9 +136,9 @@
 			  </div>
 			  <div class="mcs-data">Tunas Industrial Estate Blok 8F, Batam Kota, Batam Centre, Batam, Kepulauan Riau</div>
 			</a>
-			<a title="Office Address" class="mcs-map img-frame thumb-loading" href="" target="_blank">
+			<div class="mcs-map img-frame thumb-loading">
 			  <iframe class="lazyload" data-original="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.0686002679636!2d104.0722836756797!3d1.1107528622962475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d988c7d2f22c17%3A0x85777502628df4b9!2sPT.%20Interfood%20Sukses%20Jasindo!5e0!3m2!1sen!2sid!4v1768206154484!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</a>
+			</div>
 		  </div>
 		
 		  <div class="mcs-box">
