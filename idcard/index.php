@@ -81,7 +81,7 @@
 	    <div class="mcs-container">
 		
 		  <div class="mcs-box">
-		    <a title="FullName Whatsapp Link" class="mcs-info" href="" target="_blank">
+		    <a title="FullName Whatsapp Link" class="mcs-info" href="https://api.whatsapp.com/send/?phone=6280000000000" target="_blank">
 			  <div class="mcs-label mcs-wa">
 			    <?php require ($_SERVER['IF'].'template/img/icon/contact-whatsapp.svg')?>
 				<div class="mcs-label-name">Whatsapp</div>
@@ -96,7 +96,7 @@
 		  </div>
 		
 		  <div class="mcs-box">
-		    <a title="FullName Email Link" class="mcs-info" href="" target="_blank">
+		    <a title="FullName Email Link" class="mcs-info" href="mailto:fullname@interfood.co.id" target="_blank">
 			  <div class="mcs-label mcs-ml">
 			    <?php require ($_SERVER['IF'].'template/img/icon/contact-mail.svg')?>
 				<div class="mcs-label-name">Email</div>
@@ -106,7 +106,7 @@
 		  </div>
 		
 		  <div class="mcs-box">
-		    <div title="FullName WeChat Link" class="mcs-info" href="" target="_blank">
+		    <div title="FullName WeChat Link" class="mcs-info">
 			  <div class="mcs-label mcs-wc">
 			    <?php require ($_SERVER['IF'].'template/img/icon/contact-wechat.svg')?>
 				<div class="mcs-label-name">WeChat</div>
@@ -129,7 +129,7 @@
 	    <div class="mcs-container">
 		
 		  <div class="mcs-box mcs-address">
-		    <a title="Batam Branch Address" class="mcs-info" href="" target="_blank">
+		    <a title="Batam Branch Address" class="mcs-info" href="https://maps.app.goo.gl/s3wGA48xzMBcd9b79" target="_blank">
 			  <div class="mcs-label mcs-office">
 			    <?php require ($_SERVER['IF'].'template/img/icon/contact-map.svg')?>
 				<div class="mcs-label-name">Batam Branch</div>
@@ -142,7 +142,7 @@
 		  </div>
 		
 		  <div class="mcs-box">
-		    <a title="FullName Phone Link" class="mcs-info" href="" target="_blank">
+		    <a title="FullName Phone Link" class="mcs-info" href="tel:+6280000000000" target="_blank">
 			  <div class="mcs-label mcs-office">
 			    <?php require ($_SERVER['IF'].'template/img/icon/contact-phone.svg')?>
 				<div class="mcs-label-name">Phone</div>
@@ -152,7 +152,7 @@
 		  </div>
 		
 		  <div class="mcs-box">
-		    <a title="FullName Email Link" class="mcs-info" href="" target="_blank">
+		    <a title="FullName Email Link" class="mcs-info" href="mailto:office@interfood.co.id" target="_blank">
 			  <div class="mcs-label mcs-office">
 			    <?php require ($_SERVER['IF'].'template/img/icon/contact-mail.svg')?>
 				<div class="mcs-label-name">Email</div>
