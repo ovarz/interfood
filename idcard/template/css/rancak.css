@@ -38,12 +38,12 @@ display:flex; text-align:center; align-items:center; justify-content:center;}
 
 
 .rancak-foundation, .rancak-container{position:relative;}
-.rancak-container{z-index:1000; min-height:100vh; min-height:100svh; width:100%; max-width:640px; display:grid; grid-auto-rows:min-content; grid-template-rows:auto auto auto 1fr auto;}
+.rancak-container{z-index:1000; min-height:100vh; min-height:100svh; width:100%; max-width:568px; display:grid; grid-auto-rows:min-content; grid-template-rows:auto auto auto 1fr auto;}
 
 
 
 .header, .personal-data{position:relative; z-index:1000;}
-.header .site-container{display:flex; justify-content:space-between; align-items:center; padding:var(--size-3);}
+.header .site-container{display:flex; justify-content:space-between; align-items:center; padding:var(--size-3); padding-top:var(--size-2);}
 .header-box{padding:var(--size-4);}
 .header-box svg{width:auto; height:var(--size-4);}
 .header-logo svg{height:var(--size-5);}
@@ -60,20 +60,34 @@ display:flex; text-align:center; align-items:center; justify-content:center;}
 
 
 
-.tab{display:grid; grid-template-columns:repeat(2,1fr);}
+.tab{display:grid; grid-template-columns:repeat(2,1fr); position:-webkit-sticky; position:sticky; z-index:calc(var(--max-zindex) - 9000); top:0;}
 .tab-button{padding:var(--size-3) var(--size-4); border-bottom:3px solid;
 font-family:"Bai Jamjuree", sans-serif; font-size:1rem; font-weight:bold; line-height:130%; text-transform:uppercase;}
 
 
 
 .main-content{padding:var(--size-5);}
+.main-content-slide{display:none;}
+.main-content-slide[aria-slide="tab-Personal"]{display:block;}
+.mcs-container{display:grid; grid-gap:var(--size-3);}
+.mcs-box{display:grid; grid-gap:var(--size-3); grid-template-columns:1fr auto; padding:var(--size-4); align-items:center; overflow:hidden;}
+.mcs-info{display:grid; grid-gap:var(--size-2); grid-auto-rows:min-content;}
+.mcs-label{display:flex; align-items:center; font-weight:normal;}
+.mcs-label svg{width:auto; height:16px; margin-right:var(--size-2);}
+.mcs-data{line-height:150%;}
+.mcs-qr-frame{line-height:0; padding:var(--size-2); border:1px solid;}
+.mcs-qr-frame svg{width:auto; height:var(--size-5);}
+
+.mcs-address{padding:0;}
+.mcs-address .mcs-info{padding:var(--size-4);}
+.mcs-map{width:120px; height:100%; min-height:120px;}
 
 
 
 .footer{display:grid;}
 .footer-curve{line-height:0;}
 .footer-curve svg{width:100%; height:auto; position:relative; bottom:-1px;}
-.footer-copyright{padding:var(--size-4) var(--size-5); text-align:right; font-weight:bold;}
+.footer-copyright{padding:var(--size-1) var(--size-5) var(--size-3); text-align:right; font-weight:bold;}
 
 
 
@@ -81,7 +95,7 @@ font-family:"Bai Jamjuree", sans-serif; font-size:1rem; font-weight:bold; line-h
 
 
 
-@media screen and (min-width:0px) and (max-width:639px){
+@media screen and (min-width:0px) and (max-width:567px){
   :root, :before, :after{
     
   }

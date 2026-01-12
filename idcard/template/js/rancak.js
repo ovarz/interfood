@@ -22,6 +22,19 @@ function open_sticky(){
 
 
 
+function switch_tab(){
+  $('.tab-button').click(function(){
+    var get_tab = $(this).attr('aria-tab');
+	$('.tab-button[aria-tab=' + get_tab +']').toggleClass('tab-curr');
+	$('.tab-button').not('.tab-button[aria-tab=' + get_tab +']').removeClass('tab-curr');
+    $('.main-content-slide[aria-slide=' + get_tab +']').slideToggle('fast');
+    $('.main-content-slide').not('[aria-slide=' + get_tab +']').slideUp('fast');
+	return false;
+  });	
+}
+
+
+
 function change_lang(){
   $('.choice-lang').click(function(){
     var get_lang = $(this).attr('aria-lang');
@@ -36,5 +49,6 @@ function change_lang(){
 $(document).ready(function(){
   "use strict";
   open_sticky();
+  switch_tab();
   change_lang();
 });
