@@ -37,7 +37,7 @@
 	  <ul class="personal-data-container">
 	    <li class="personal-data-thumb">
 		  <div class="pdt-frame img-frame thumb-loading">
-    		<img title="Foto <?php echo $random_title[array_rand($random_title)];?>" class="lazyload" data-original="template/img/sample/sample-<?php echo rand(1,6); ?>.jpg">
+    		<img title="Foto <?php echo $random_title[array_rand($random_title)];?>" class="lazyload" data-original="template/img/sample/sample-<?php echo rand(1,5); ?>.jpg">
 		  </div>
 		</li>
 	    <li class="personal-data-info">
@@ -88,7 +88,7 @@
 			  </div>
 			  <div class="mcs-data">+62-800-0000-0000</div>
 			</a>
-			<button title="FullName Whatsapp QR" class="mcs-qr">
+			<button title="FullName Whatsapp QR" class="mcs-qr open-sticky" aria-popup-button="QRwhatsapp">
 			  <div class="mcs-qr-frame">
 			    <?php require ($_SERVER['IF'].'template/img/sample/qr.svg')?>
 			  </div>
@@ -113,7 +113,7 @@
 			  </div>
 			  <div class="mcs-data">WeChatID</div>
 			</div>
-			<button title="FullName WeChat QR" class="mcs-qr">
+			<button title="FullName WeChat QR" class="mcs-qr open-sticky" aria-popup-button="QRwechat">
 			  <div class="mcs-qr-frame">
 			    <?php require ($_SERVER['IF'].'template/img/sample/qr.svg')?>
 			  </div>
@@ -184,4 +184,19 @@
   
   
 </div>
+
+
+
+<?php 
+  $qr_id='QRwhatsapp';
+  $qr_label='Whatsapp';
+  $qr_detail='+62-800-0000-0000';
+  require ($_SERVER['IF'].'template/module/qr-popup.php')
+?>
+<?php 
+  $qr_id='QRwechat';
+  $qr_label='WeChat';
+  $qr_detail='WeChatID';
+  require ($_SERVER['IF'].'template/module/qr-popup.php')
+?>
 <?php require ($_SERVER['IF'].'template/inc/base-bottom.php')?>

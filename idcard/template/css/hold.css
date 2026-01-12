@@ -101,6 +101,22 @@ top:calc(var(--button-size) / 3 * -1); right:calc(var(--button-size) / 3 * -1);}
 
 
 
+.qr-detail{max-width:568px; height:100vh; height:100svh; border-radius:0; border:0; background-color:var(--color-4); color:var(--bg-2);}
+.qr-detail .header-close{position:relative; top:0; right:0; padding:var(--size-4); fill:var(--bg-2);}
+.qr-detail .header-close:hover{fill:var(--color-2);}
+.qr-detail .header{background-color:transparent;}
+.qr-detail .header-logo svg path{fill:var(--bg-2);}
+
+.qr-detail-container{padding:var(--size-4) var(--size-5); display:grid; grid-gap:var(--size-4);}
+.qr-detail-container *{text-align:center;}
+.qrdc-label, .qrdc-detail{font-family:"Bai Jamjuree", sans-serif;}
+.qrdc-label{font-size:1.429rem; font-weight:bold; line-height:130%; text-transform:uppercase;}
+.qrdc-detail, .qrdc-note{line-height:150%;}
+.qrdc-frame{padding:var(--size-5); background-color:var(--bg-2); fill:var(--color-2); border-radius:var(--rounded-3); width:100%; max-width:360px;}
+.qrdc-frame svg{width:100%; height:auto;}
+
+
+
 
 
 

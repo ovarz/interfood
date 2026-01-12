@@ -45,8 +45,8 @@ display:flex; text-align:center; align-items:center; justify-content:center;}
 .header, .personal-data{position:relative; z-index:1000;}
 .header .site-container{display:flex; justify-content:space-between; align-items:center; padding:var(--size-3); padding-top:var(--size-2);}
 .header-box{padding:var(--size-4);}
-.header-box svg{width:auto; height:var(--size-4);}
-.header-logo svg{height:var(--size-5);}
+.header-box svg{width:auto !important; height:var(--size-4) !important;}
+.header-logo svg{height:var(--size-5) !important;}
 .header-right{display:flex;}
 
 
