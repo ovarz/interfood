@@ -87,7 +87,7 @@ font-family:"Bai Jamjuree", sans-serif; font-size:1rem; font-weight:bold; line-h
 .footer{display:grid;}
 .footer-curve{line-height:0;}
 .footer-curve svg{width:100%; height:auto; position:relative; bottom:-1px;}
-.footer-copyright{padding:var(--size-1) var(--size-5) var(--size-3); text-align:right; font-weight:bold;}
+.footer-copyright{padding:var(--size-2) var(--size-5) var(--size-3); text-align:right; font-weight:bold;}
 
 
 
