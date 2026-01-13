@@ -38,12 +38,12 @@ display:flex; text-align:center; align-items:center; justify-content:center;}
 
 
 .rancak-foundation, .rancak-container{position:relative;}
-.rancak-container{z-index:1000; min-height:100vh; width:100%; max-width:568px; display:grid; grid-auto-rows:min-content; grid-template-rows:auto auto auto 1fr auto;}
+.rancak-container{z-index:1000; min-height:100vh; min-height:100svh; width:100%; max-width:568px; display:grid; grid-auto-rows:min-content; grid-template-rows:auto auto auto 1fr auto;}
 
 
 
 .header, .personal-data{position:relative; z-index:1000;}
-.header .site-container{display:flex; justify-content:space-between; align-items:center; padding:var(--size-3); padding-top:var(--size-2);}
+.header .site-container{display:flex; justify-content:space-between; align-items:flex-start; padding:var(--size-3); padding-top:var(--size-2);}
 .header-box{padding:var(--size-4);}
 .header-box svg{width:auto !important; height:var(--size-4) !important;}
 .header-logo svg{height:var(--size-5) !important;}
