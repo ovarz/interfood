@@ -92,8 +92,8 @@ display:grid; grid-template-rows:1fr auto;}
 .rsb-3 .rsb-bg{position:absolute; z-index:1; top:0; right:0; width:76%;}
 .rsb-3 .rsb-bg svg{fill:var(--color-border); width:100%; height:auto;}
 .rsb-3-container{position:relative; z-index:1000;}
-.rsb-3 .rsb-address{font-size:var(--fontsize-regular);}
-.rsb-3 .rsb-contact{display:grid; grid-gap:var(--size-2); color:var(--color-2); fill:var(--color-2); font-size:var(--fontsize-regular); line-height:180%;}
+.rsb-3 .rsb-address{font-size:var(--fontsize-regular); line-height:160%;}
+.rsb-3 .rsb-contact{display:grid; grid-gap:var(--size-1); color:var(--color-2); fill:var(--color-2); font-size:var(--fontsize-regular); line-height:180%;}
 .rsb-3 .rsb-contact-row{display:grid; grid-gap:var(--size-3); align-items:center; grid-template-columns:var(--size-4) 1fr; font-size:var(--fontsize-regular); line-height:180%;}
 .rsb-3 .rsb-contact-icon svg{position:relative; top:var(--icon-valign); width:auto; height:var(--fontsize-regular);}
 
