@@ -6,6 +6,8 @@
   $company='PT. Interfood Sukses Jasindo';
   $branch='Batam Branch';
   $website='www.interfood.co.id';
+  $sample_name=array("Apollo Checker Wafer Bar","Crown A Super BBQ Madu Sotong Bakar","Checkers Mini Chunky I Love Batam","Eb Bag Crab Nugget","Naraya Tunisia Dates With Branches","Bobo Thai Fish Ball","Ever D.Cookies Butter","Ahimsa Fortune Cocktail Sausage","Hoopie Crackers","Seleco Rolling Bite Seaweed");
+  $sample_brand=array("Apollo","Crown A","Checkers","Eb","Naraya","Bobo","Ever Delicious","Ahimsa","Hoopie","Seleco");
   require ('template/inc/base.php')
 ?>
 <?php require ($_SERVER['IF'].'template/inc/meta.php')?>
@@ -35,7 +37,28 @@
   
     <div class="rancak-slide">
 	  <div class="rancak-slide-body rsb-2">
-	    Slide 2
+	    <div class="rsb-2-header">
+		  <div class="rsb-logo"><?php require ($_SERVER['IF'].'template/img/logo.svg')?></div>
+		  <div class="rsb-title"><span><?php echo $title; ?></span></div>
+		</div>
+		<div class="rsb-product">
+		  <?php for ($i=1; $i<=4; $i++){ ?>
+            <div class="rsb-product-box">
+			  <div class="rsb-product-thumb">
+			    <img src="template/img/sample/<?php echo rand(1,10); ?>.png"/>
+			  </div>
+			  <div class="rsb-product-info">
+			    <div class="rsb-product-id">
+				  <?php echo rand(1,9); ?><?php echo rand(0,9); ?><?php echo rand(0,9); ?><?php echo rand(0,9); ?><?php echo rand(0,9); ?><?php echo rand(0,9); ?><?php echo rand(0,9); ?><?php echo rand(0,9); ?><?php echo rand(0,9); ?><?php echo rand(0,9); ?><?php echo rand(0,9); ?><?php echo rand(0,9); ?><?php echo rand(0,9); ?>
+				</div>
+			    <div class="rsb-product-name"><?php echo $sample_name[array_rand($sample_name)];?></div>
+			    <div class="rsb-product-brand"><?php echo $sample_brand[array_rand($sample_brand)];?></div>
+			    <div class="rsb-product-varian">Sweet & Salty</div>
+			    <div class="rsb-product-price">Rp 00.000.000</div>
+			  </div>
+            </div>
+		  <?php } ?>
+		</div>
 	  </div>
 	  <?php require ($_SERVER['IF'].'template/inc/footer.php')?>
 	</div>

@@ -36,7 +36,7 @@
 
 
 
-body, html{font-family:'Inter',sans-serif; font-size:var(--fontsize-regular); font-weight:normal; font-optical-sizing:auto; font-style:normal; letter-spacing:0.13px; 
+body, html{font-family:'Inter',sans-serif; font-size:var(--fontsize-regular); font-weight:normal; font-optical-sizing:auto; font-style:normal; letter-spacing:0.0357rem; 
 font-feature-settings:'lnum' 1; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; 
 -moz-osx-font-smoothing:grayscale; text-rendering:optimizeSpeed; color:var(--color-1);}
 html{scroll-behavior:smooth; min-height:100vh; background-color:var(--bg-1);}
@@ -45,11 +45,11 @@ body{overflow-x:hidden;}
 
 
 .rancak-foundation, .rancak-container{position:relative;}
-.rancak-container{z-index:1000; display:grid; grid-gap:var(--size-2); margin:var(--size-2) 0;}
+.rancak-container{z-index:1000; display:grid; grid-gap:var(--size-2); margin:var(--size-2) 0; zoom:0.3;}
 
 
 
-.rancak-slide{background-color:var(--bg-2); width:3508px; height:2480px; zoom:0.3; position:relative; overflow:hidden;
+.rancak-slide{background-color:var(--bg-2); width:3508px; height:2480px; position:relative; overflow:hidden;
 display:grid; grid-template-rows:1fr auto;}
 .rancak-slide-body{padding:var(--size-6);}
 .rsf-curve{line-height:0;}
@@ -70,11 +70,30 @@ display:grid; grid-template-rows:1fr auto;}
 
 
 
+.rsb-2{padding-bottom:0;}
+.rsb-2-header{display:flex; justify-content:space-between; align-items:center;}
+.rsb-2 .rsb-logo svg{width:auto; height:4.2857rem;}
+.rsb-2 .rsb-title{font-size:var(--fontsize-medium); font-family:"Bai Jamjuree",sans-serif; font-weight:bold; text-transform:uppercase; line-height:130%; color:var(--color-2); max-width:50%; text-align:right;}
+.rsb-2 .rsb-product{display:grid; grid-gap:var(--size-3); grid-template-columns:repeat(4,1fr); margin-top:var(--size-5);}
+.rsb-2 .rsb-product-box{border:1px solid var(--color-border); border-radius:var(--rounded-2); overflow:hidden;}
+.rsb-2 .rsb-product-thumb{--aspect-ratio:4/5; position:relative;}
+.rsb-2 .rsb-product-thumb:before{content:''; display:block; padding-top:calc(100% / calc(var(--aspect-ratio)));}
+.rsb-2 .rsb-product-thumb img{position:absolute; top:5%; left:5%; width:90%; height:90%; object-fit:cover;}
+.rsb-2 .rsb-product-info{padding:var(--size-3); padding-top:0; font-size:var(--fontsize-small); line-height:150%; display:grid; grid-gap:0.1429rem;}
+.rsb-2 .rsb-product-info > *{display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden;}
+.rsb-2 .rsb-product-name, .rsb-2 .rsb-product-brand{color:var(--color-2);}
+.rsb-2 .rsb-product-name{font-size:var(--fontsize-regular); font-weight:bold; text-wrap:balance; -webkit-line-clamp:3;}
+.rsb-2 .rsb-product-price{color:var(--color-4); font-weight:bold;}
+.rsb-2 + .rancak-slide-footer{position:absolute; bottom:0; left:0; width:100%;}
+
+
+
 .rsb-3{display:flex; align-items:flex-end; padding-bottom:0;}
 .rsb-3 .rsb-bg{position:absolute; z-index:1; top:0; right:0; width:76%;}
 .rsb-3 .rsb-bg svg{fill:var(--color-border); width:100%; height:auto;}
 .rsb-3-container{position:relative; z-index:1000;}
-.rsb-3 .rsb-contact{display:grid; grid-gap:var(--size-3); color:var(--color-2); fill:var(--color-2);}
-.rsb-3 .rsb-contact-row{display:grid; grid-gap:var(--size-2); align-items:center; grid-template-columns:var(--size-5) 1fr; font-size:var(--fontsize-medium); line-height:140%;}
-.rsb-3 .rsb-contact-icon svg{position:relative; top:var(--icon-valign); width:auto; height:var(--fontsize-medium);}
+.rsb-3 .rsb-address{font-size:var(--fontsize-regular);}
+.rsb-3 .rsb-contact{display:grid; grid-gap:var(--size-2); color:var(--color-2); fill:var(--color-2); font-size:var(--fontsize-regular); line-height:180%;}
+.rsb-3 .rsb-contact-row{display:grid; grid-gap:var(--size-3); align-items:center; grid-template-columns:var(--size-4) 1fr; font-size:var(--fontsize-regular); line-height:180%;}
+.rsb-3 .rsb-contact-icon svg{position:relative; top:var(--icon-valign); width:auto; height:var(--fontsize-regular);}
 
