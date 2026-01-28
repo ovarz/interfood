@@ -142,23 +142,70 @@
 		  </div>
 		
 		  <div class="mcs-box">
-		    <a title="FullName Phone Link" class="mcs-info" href="tel:+6280000000000" target="_blank">
-			  <div class="mcs-label mcs-office">
-			    <?php require ($_SERVER['IF'].'template/img/icon/contact-phone.svg')?>
-				<div class="mcs-label-name">Phone</div>
+		    <a title="FullName Whatsapp Link" class="mcs-info" href="https://api.whatsapp.com/send/?phone=6280000000000" target="_blank">
+			  <div class="mcs-label mcs-wa">
+			    <?php require ($_SERVER['IF'].'template/img/icon/contact-whatsapp.svg')?>
+				<div class="mcs-label-name">Whatsapp</div>
 			  </div>
 			  <div class="mcs-data">+62-800-0000-0000</div>
 			</a>
+			<button title="FullName Whatsapp QR" class="mcs-qr open-sticky" aria-popup-button="QRwhatsappOffice">
+			  <div class="mcs-qr-frame">
+			    <?php require ($_SERVER['IF'].'template/img/sample/qr.svg')?>
+			  </div>
+			</button>
 		  </div>
-		
+		  
+		  <!--
 		  <div class="mcs-box">
 		    <a title="FullName Email Link" class="mcs-info" href="mailto:office@interfood.co.id" target="_blank">
-			  <div class="mcs-label mcs-office">
-			    <?php require ($_SERVER['IF'].'template/img/icon/contact-mail.svg')?>
+			  <div class="mcs-label mcs-ml">
+			    <php require ($_SERVER['IF'].'template/img/icon/contact-mail.svg')?>
 				<div class="mcs-label-name">Email</div>
 			  </div>
 			  <div class="mcs-data">office@interfood.co.id</div>
 			</a>
+		  </div>
+		  -->
+		
+		  <div class="mcs-box">
+		    <a title="FullName Facebook Link" class="mcs-info" href="https://www.facebook.com/interfood.indonesia" target="_blank">
+			  <div class="mcs-label mcs-fb">
+			    <?php require ($_SERVER['IF'].'template/img/icon/contact-facebook.svg')?>
+				<div class="mcs-label-name">Facebook</div>
+			  </div>
+			  <div class="mcs-data">@interfood.indonesia</div>
+			</a>
+		  </div>
+		
+		  <div class="mcs-box">
+		    <a title="FullName Instagram Link" class="mcs-info" href="https://www.instagram.com/interfood.indonesia" target="_blank">
+			  <div class="mcs-label mcs-ig">
+			    <?php require ($_SERVER['IF'].'template/img/icon/contact-instagram.svg')?>
+				<div class="mcs-label-name">Instagram</div>
+			  </div>
+			  <div class="mcs-data">@interfood.indonesia</div>
+			</a>
+			<button title="FullName Instagram QR" class="mcs-qr open-sticky" aria-popup-button="QRinstagram">
+			  <div class="mcs-qr-frame">
+			    <?php require ($_SERVER['IF'].'template/img/sample/qr.svg')?>
+			  </div>
+			</button>
+		  </div>
+		
+		  <div class="mcs-box">
+		    <a title="FullName Tiktok Link" class="mcs-info" href="https://www.tiktok.com/@interfood.indonesia" target="_blank">
+			  <div class="mcs-label mcs-tk">
+			    <?php require ($_SERVER['IF'].'template/img/icon/contact-tiktok.svg')?>
+				<div class="mcs-label-name">Tiktok</div>
+			  </div>
+			  <div class="mcs-data">@interfood.indonesia</div>
+			</a>
+			<button title="FullName Tiktok QR" class="mcs-qr open-sticky" aria-popup-button="QRtiktok">
+			  <div class="mcs-qr-frame">
+			    <?php require ($_SERVER['IF'].'template/img/sample/qr.svg')?>
+			  </div>
+			</button>
 		  </div>
 		  
 		</div>
@@ -194,9 +241,27 @@
   require ($_SERVER['IF'].'template/module/qr-popup.php')
 ?>
 <?php 
+  $qr_id='QRwhatsappOffice';
+  $qr_label='Whatsapp';
+  $qr_detail='+62-800-0000-0000';
+  require ($_SERVER['IF'].'template/module/qr-popup.php')
+?>
+<?php 
   $qr_id='QRwechat';
   $qr_label='WeChat';
   $qr_detail='WeChatID';
+  require ($_SERVER['IF'].'template/module/qr-popup.php')
+?>
+<?php 
+  $qr_id='QRinstagram';
+  $qr_label='Instagram';
+  $qr_detail='interfood.indonesia';
+  require ($_SERVER['IF'].'template/module/qr-popup.php')
+?>
+<?php 
+  $qr_id='QRtiktok';
+  $qr_label='Tiktok';
+  $qr_detail='interfood.indonesia';
   require ($_SERVER['IF'].'template/module/qr-popup.php')
 ?>
 <?php require ($_SERVER['IF'].'template/inc/base-bottom.php')?>

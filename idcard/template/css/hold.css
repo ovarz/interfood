@@ -79,6 +79,9 @@ a.mcs-info:hover{color:var(--color-4);}
 .mcs-wa{color:var(--color-wa); fill:var(--color-wa);}
 .mcs-ml{color:var(--color-ml); fill:var(--color-ml);}
 .mcs-wc{color:var(--color-wc); fill:var(--color-wc);}
+.mcs-fb{color:var(--color-fb); fill:var(--color-fb);}
+.mcs-ig{color:var(--color-ig); fill:var(--color-ig);}
+.mcs-tk{color:var(--color-tk); fill:var(--color-tk);}
 .mcs-office{color:var(--color-1); fill:var(--color-1);}
 
 
@@ -115,6 +118,7 @@ top:calc(var(--button-size) / 3 * -1); right:calc(var(--button-size) / 3 * -1);}
 .qrdc-detail, .qrdc-note{line-height:150%;}
 .qrdc-frame{padding:var(--size-5); background-color:var(--bg-2); fill:var(--color-2); border-radius:var(--rounded-3); width:100%; max-width:360px;}
 .qrdc-frame svg{width:100%; height:auto;}
+.qrdc-lazyload{--aspect-ratio:1/1;}
 
 
 

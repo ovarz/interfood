@@ -25,7 +25,17 @@
         </div>
 		<div class="qrdc-display content-center">
           <div class="qrdc-frame">
-            <?php require ($_SERVER['IF'].'template/img/sample/qr.svg')?>
+		    <div class="qrdc-lazyload img-frame thumb-loading">
+              <?php if($qr_id != 'QRinstagram' && $qr_id != 'QRtiktok') { ?>
+    		    <img title="QR <?php echo $random_title[array_rand($random_title)];?>" class="lazyload" data-original="template/img/sample/qr.svg">
+              <?php } ?>
+              <?php if($qr_id == 'QRinstagram') { ?>
+    		    <img title="QR <?php echo $random_title[array_rand($random_title)];?>" class="lazyload" data-original="template/img/qr-instagram.jpg">
+              <?php } ?>
+              <?php if($qr_id == 'QRtiktok') { ?>
+    		    <img title="QR <?php echo $random_title[array_rand($random_title)];?>" class="lazyload" data-original="template/img/qr-tiktok.jpg">
+              <?php } ?>
+			</div>
           </div>
 		</div>
         <div class="qrdc-note">
