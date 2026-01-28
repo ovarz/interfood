@@ -93,7 +93,7 @@ a.mcs-info:hover{color:var(--color-4);}
 
 
 .rancak-popup, .rancak-popup-overlay, .rancak-popup-container{top:0; left:0; width:100%; height:100%;}
-.rancak-popup{position:fixed; z-index:calc(var(--max-zindex) - 1000);}
+.rancak-popup{position:fixed; z-index:calc(var(--max-zindex) - 1000); height:100vh;}
 .rancak-popup-container{position:relative; z-index:1000; padding:var(--body-padding);}
 .rancak-popup-overlay{position:absolute; z-index:2000; background-color:var(--color-2); opacity:34%;}
 .rancak-popup-box{position:relative; z-index:3000; width:100%; max-width:610px; max-height:100%; padding:var(--body-padding); background-color:var(--bg-2);
