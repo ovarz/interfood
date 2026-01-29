@@ -223,14 +223,13 @@ a.hbl-box:hover{border-color:var(--color-2);}
 .cdl-box{border-color:var(--color-border-form);}
 .cdl-image-frame{border-radius:var(--rounded-1);}
 .cdl-city{color:var(--color-4);}
-.cdl-box .mli-contact-link{background-color:var(--color-2); color:var(--bg-2); fill:var(--bg-2); border-radius:var(--rounded-1);}
-.cdl-box .mli-contact-mail{background-color:var(--color-ml);}
-.cdl-box .mli-contact-maps{background-color:#34a853;}
-.cdl-box .mli-contact-whatsapp{background-color:var(--color-wa);}
-.cdl-box .mli-contact-facebook{background-color:var(--color-fb);}
-.cdl-box .mli-contact-instagram{background-color:var(--color-ig);}
-.cdl-box .mli-contact-tiktok{background-color:var(--color-tk);}
-.cdl-box .mli-contact-link:hover{background-color:var(--color-4) !important;}
+.cdl-box .mli-contact-link{background-color:var(--color-4); color:var(--bg-2); fill:var(--bg-2); border-radius:var(--rounded-1);}
+.cdl-box .mli-contact-mail:hover{background-color:var(--color-ml);}
+.cdl-box .mli-contact-maps:hover{background-color:#34a853;}
+.cdl-box .mli-contact-whatsapp:hover{background-color:var(--color-wa);}
+.cdl-box .mli-contact-facebook:hover{background-color:var(--color-fb);}
+.cdl-box .mli-contact-instagram:hover{background-color:var(--color-ig);}
+.cdl-box .mli-contact-tiktok:hover{background-color:var(--color-tk);}
 
 .cdl-toggle-icon svg{transition:var(--transition-default);}
 .cdl-toggle-open svg{transform:rotate(180deg);}
